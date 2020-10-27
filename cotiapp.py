@@ -17,7 +17,7 @@ def index():
 def api_root():
     response = ""
     try:
-        with open('dolar.json', 'r') as f:
+        with open('dolar.json', 'r') as f: //participating in hacktoberfest
             response = f.read()
     except IOError:
         response = create_json()
